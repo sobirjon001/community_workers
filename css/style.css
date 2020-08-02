@@ -323,3 +323,13 @@ body {
     color: black;
     text-shadow: 0px 0px 4px white;
 }
+#hospital-7 {
+    background-image: url("../img/5-scene-hospital-office.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#hospital-8 {
+    background-image: url("../img/5-scene-hospital-patient.jpeg");
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
