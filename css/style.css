@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url("../font/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url("../font/Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../font/Roboto-Bold.ttf");
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+        /* Header */
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: dimgray;
+    display: flex;
+    align-content: center;
+}
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.logo-container {
+    display: flex;
+    margin: auto;
+}
+.logo-container img {
+    width: 80px;
+}
+.nav-main {
+    margin: auto;
+}
+.nav-main ul {
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+.nav-main ul li {
+    width: 80px;
+    padding: 3px;
+    text-align: center;    
+}
+.nav-main ul li a{
+    color: white;
+    font-family: Roboto-Bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-main ul li:hover {
+    border: 1px solid white;
+    background-color: thistle;
+    transition: 1s ease;
+}
+.active {
+    border: 1px solid white;
+}
+.burger-container {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.burger {
+    margin: auto;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: tomato;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+        /* .nav-prof are hiidden in cellphones and tablet. Activated upon pressing .burger */
+
+.nav-links {    
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    z-index: +1;
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+}
+.nav-links ul {    
+    list-style: none;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-links ul li {
+    width: 160px;    
+    margin: auto;
+    padding: 20px 0px;
+}
+.nav-links ul li a {
+    font-family: Roboto-Italic;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.nav-links ul li:hover {
+    border: 2px solid white;
+    background-color: thistle;
+    transition: 1s ease;
+}
+
+        /* To dissable overflow. App-like experience. */
+
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+        /* Nav-links and burger animation in cellphones using JS */
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+}
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle #line2 {
+    opacity: 0;
+}
+.toggle #line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+        /* Website content */
+
+        /* Jeneral styling */
+
+.grid {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    display: grid;
+    grid-row: 1fr;
+}
+
+        /* There are 4 sections with vh-width calculated inside grid */
+
+.content {
+    height: calc((100vh - 120px) / 3);
+    margin: 5px;
+    display: flex;
+    background-size: 100% 100%;
+}
+.content img {
+    padding: 10px 0px;
+}
+.content p {
+    width: 60%;
+    margin: auto;
+    font-family: Roboto-Bold;
+    font-size: 23px;
+}
+.persone {
+    height: 100%;
+    margin: auto;
+    /* width: 35%; */
+}
+
+        /* Specific styling */
+        /* 4 sections of Home */
+
+#intro {
+    background-image: url("../img/3-scene-office.jpeg");
+    color: rgb(177, 252, 1);
+    text-shadow: 1px 1px 3px black;
+}
+#dark-people {
+    background-color: rgb(138, 158, 180);
+    color: rgb(243, 216, 190);
+    text-shadow: 1px 1px 3px black;
+    text-align: center !important;
+}
+#dark-people img {
+    height: 100%;
+}
+#thinking {
+    background-image: url("../img/3-scene-home.jpeg");
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+#collegs {
+    background-image: url("../img/3-scene-office-5.jpeg");
+}
+#collegs p {
+    position: absolute;
+    width: 100%;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+
+}
+#viki {
+    background-image: url("../img/3-scene-office-3.jpeg");
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 4px rgb(9, 255, 0);
+}
+#rute {
+    background-image: url("../img/3-scene-office-4.jpeg");
+    color: rgb(167, 40, 40);
+    text-shadow: 0px 0px 4px yellow;
+}
+#alex {
+    background-image: url("../img/3-scene-office-5.jpeg");
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+#airport {
+    background-image: url("../img/3-scene-airport.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#waitress {
+    background-image: url("../img/3-scene-restaurant.jpeg");
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+#constructor {
+    background-image: url("../img/3-scene-construction.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#marceting {
+    background-image: url(../img/marketing.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: wheat;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#conclusion {
+    background-image: url("../img/employee-engagement.png");
+    background-color: rgb(116, 126, 73);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+#conclusion p {   
+    margin-bottom: 20px; 
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+
+        /* 4 sections of Medical */
+
+#hospital-1 {
+    background-image: url("../img/5-scene-hospital-building.jpeg");
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+#hospital-2 {
+    background-image: url("../img/5-scene-hospital-patient-doctor-2.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#hospital-2 p {
+    position: absolute;
+    width: 100%;
+    padding: 10px 10px;
+}
+#hospital-3 {
+    background-image: url("../img/5-scene-hospital-patient-doctor.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#hospital-3 p {
+    position: absolute;
+    width: 100%;
+    padding: 10px 10px;
+}
