@@ -338,3 +338,18 @@ body {
     color: white;
     text-shadow: 0px 0px 4px black;
 }
+#hospital-10 {
+    background-image: url("../img/5-scene-hospital-surgery-room.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#hospital-11 {
+    background-image: url("../img/5-scene-hospital-room-2.jpeg");
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+#hospital-12 {
+    background-image: url("../img/5-scene-hospital-patient-2.jpeg");
+    color: black;
+    text-shadow: 0px 0px 4px white;
+}
