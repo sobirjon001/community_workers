@@ -258,34 +258,10 @@ body {
 }
 
             /* Medical don't hase specific styling */
-            
+
            /* 4sections of police */
 
-#police-1 {
-    background-image: url("../img/7-scene-police-station.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#police-2 {
-    background-color: lightblue;
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#badg {
-    align-self: center;    
-    width: 270px;
-    height: 160px;
-}
-#police-2 p {
-    position: absolute;
-    width: 70%;
-    right: 20px;
-}
-#police-3 {
-    background-image: url("../img/7-scene-police-station-1.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
+
 #police-4 {
     background-image: url("../img/7-scene-police-station-2.jpeg");
     color: black;
