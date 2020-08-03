@@ -1,0 +1,85 @@
+           /* 4sections of police */
+
+           #police-1 {
+            background-image: url("../img/7-scene-police-station.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-2 {
+            background-color: lightblue;
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #badg {
+            width: 80%;
+        }
+        #police-2 p {
+            position: absolute;
+            right: 20px;
+        }
+        #police-3 {
+            background-image: url("../img/7-scene-police-station-1.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-4 {
+            background-image: url("../img/7-scene-police-station-2.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-5 {
+            background-image: url("../img/7-scene-police-station-4.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-6 {
+            background-image: url("../img/7-scene-police-station-3.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-7 {
+            background-image: url("../img/7-scene-street-2.jpeg");
+            color: black;
+            text-shadow: 0px 0px 4px white;
+        
+        }
+        #police-8 {
+            background-image: url("../img/7-scene-street-4.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #pol-car {
+            width: 180px;
+            height: 130px;
+            position: relative;
+            top: 50px;
+            left: 20px;
+            
+            
+        }
+        #police-8 p {
+            position: absolute;
+        }
+        #police-9 {
+            background-image: url("../img/7-scene-street-3.jpeg");
+            color: black;
+            text-shadow: 0px 0px 4px white;
+        }
+        #pol-car2 {
+            width: 280px;
+            height: 130px;
+            margin-top: 30px;
+        }
+        #police-9 p {
+            position: absolute;
+        }
+        #police-10 {
+            background-image: url("../img/7-scene-street.jpeg");
+            color: white;
+            text-shadow: 0px 0px 4px black;
+        }
+        #police-11 {
+            background-image: url("../img/7-scene-street-5.jpeg");
+            color: black;
+            text-shadow: 0px 0px 4px white;
+        }
