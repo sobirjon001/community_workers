@@ -112,6 +112,7 @@ nav {
     width: 160px;    
     margin: auto;
     padding: 20px 0px;
+    opacity: 0;
 }
 .nav-links ul li a {
     font-family: Roboto-Italic;
@@ -164,6 +165,7 @@ body {
 
 .grid {
     position: absolute;
+    width: 100%;
     z-index: -1;
     top: 100px;
     display: grid;
@@ -172,120 +174,89 @@ body {
 
         /* There are 4 sections with vh-width calculated inside grid */
 
-.content {
-    /* position: relative; */
-    height: calc((100vh - 120px) / 3);
-    margin: 5px;
+.content-container {
+    position: relative;
+    height: calc((100vh - 105px) / 3);
+    width: 100%;
+    padding: 5px 5px 0 5px;
     display: flex;
-    background-size: 100% 100%;
 }
-.content p {
-    width: 80%;
+.backgr-img {
+    position: relative;    
+    width: 100%;
+    height: 100%;
+}
+.content {
+    position: absolute;
+    height: calc((100vh - 120px) / 3);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    display: flex;
+}
+.talking {
+    position: relative;
+    width: auto;
     margin: auto;
     padding: 0px 6px;
     font-family: Roboto-Bold;
     font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px black, 1px -1px black, -1px -1px black, -1px 1px black;
 }
 .persone {
+    position: relative;
     height: 100%;
     padding: 6px 0px;
-    margin: auto;    
+    margin: auto;
+}
+.center-line {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: Roboto-Bold;
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px black, 1px -1px black, -1px -1px black, -1px 1px black;
 }
 
         /* Specific styling */
         /* 4 sections of Home */
 
-#intro {
-    background-image: url("../img/3-scene-office.jpeg");
-    color: rgb(177, 252, 1);
-    text-shadow: 1px 1px 3px black;
-}
-#dark-people {
-    background-color: rgb(138, 158, 180);
-    color: rgb(243, 216, 190);
-    text-shadow: 1px 1px 3px black;
-    text-align: center !important;
-}
-#dark-people p {
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 20px;
-}
 #dark-peop-img {
+    position: relative;
+    display: flex;
+    max-height: 100%;
+    width: auto;
     margin: auto;
-    height: 100%;
 }
-#thinking {
-    background-image: url("../img/3-scene-home.jpeg");
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 4px rgb(0, 0, 0);
-}
-#collegs {
-    background-image: url("../img/3-scene-office-5.jpeg");
-}
-#collegs p {
-    position: absolute;
+#dark-peop-bachgrd-gradient {
+    position: relative;
     width: 100%;
-    color: black;
-    text-shadow: 2px 2px 4px white;
-
+    height: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, lightgray, dimgray, lightgray);
 }
-#viki {
-    background-image: url("../img/3-scene-office-3.jpeg");
-    color: rgb(255, 0, 0);
-    text-shadow: 0px 0px 4px rgb(9, 255, 0);
-}
-#rute {
-    background-image: url("../img/3-scene-office-4.jpeg");
-    color: rgb(167, 40, 40);
-    text-shadow: 0px 0px 4px yellow;
-}
-#alex {
-    background-image: url("../img/3-scene-office-5.jpeg");
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 4px rgb(0, 0, 0);
-}
-#airport {
-    background-image: url("../img/3-scene-airport.jpeg");
-    color: black;
-    text-shadow: 0px 0px 4px white;
-}
-#waitress {
-    background-image: url("../img/3-scene-restaurant.jpeg");
-    color: white;
-    text-shadow: 0px 0px 5px black;
-}
-#constructor {
-    background-image: url("../img/3-scene-construction.jpeg");
-    color: black;
-    text-shadow: 0px 0px 4px white;
-}
-#marketing {
-    background-color: wheat;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px rgb(0, 0, 0);
-}
-#mark-shop {
-    margin: auto;
-    width: 230px;
-    height: 180px;
-}
-#marketing p {
+.p-on-top {
     position: absolute;
-    margin-left: 10px;
 }
-#conclusion {
-    background-image: url("../img/employee-engagement.png");
-    background-color: rgb(116, 126, 73);
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+#market-bachgrd-gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, lightgray, lightblue, lightgray);
 }
-#conclusion p {   
-    margin-bottom: 20px; 
-    font-size: 18px;
-    width: 90%;
-    text-align: center;
+#employee-bachgrd-gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, lightgray, rgb(252, 227, 182), lightgray);
 }
+
 
         /* 4 sections of Medical */
 
