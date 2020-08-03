@@ -261,21 +261,15 @@ body {
 
            /* 4sections of police */
 
-
-#police-4 {
-    background-image: url("../img/7-scene-police-station-2.jpeg");
-    color: black;
-    text-shadow: 0px 0px 4px white;
+#car-1 {    
+    width: 220px;
+    height: 150px;
+    margin: auto;
 }
-#police-5 {
-    background-image: url("../img/7-scene-police-station-4.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#police-6 {
-    background-image: url("../img/7-scene-police-station-3.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
+#car-2 {
+    width: 260px;
+    height: 140px;
+    margin: auto;
 }
 #police-7 {
     background-image: url("../img/7-scene-street-2.jpeg");
@@ -294,53 +288,13 @@ body {
     margin-left: 20px;
     align-self: center;
 }
-#police-8 p {
-    position: absolute;
-    margin-left: 10px;
-}
-#police-9 {
-    background-image: url("../img/7-scene-street-3.jpeg");
-    color: black;
-    text-shadow: 0px 0px 4px white;
-}
-#pol-car2 {
-    width: 280px;
-    height: 130px;
-    margin-top: 30px;
-}
-#police-9 p {
-    position: absolute;
-}
-#police-10 {
-    background-image: url("../img/7-scene-street.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#police-11 {
-    background-image: url("../img/7-scene-street-5.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#police-11 p {
-    position: absolute;
-    margin-left: 10px;
-}
-#dog {
-    margin: auto;
-    width: 80px;
-    height: 90px;
-}
-#truck {
-    margin: auto;
-    width: 240px;
+#pol-dog {
+    width: 120px;
     height: 120px;
+    margin: auto;
 }
-#police-12 {
-    background-image: url("../img/7-sceene-high.jpeg");
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-#police-12 p {
-    position: absolute;
-    width: 100%;
+#car-3 {
+    width: 220px;
+    height: 160px;
+    margin: auto;
 }
