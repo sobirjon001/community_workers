@@ -19,6 +19,7 @@
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    display: flex;
 }
         /* Header */
 
@@ -26,12 +27,15 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
+    max-width: 1024px;
+    min-width: 375px;
     height: 100px;
     background-color: dimgray;
     display: flex;
     align-content: center;
 }
 nav {
+    position: relative;
     width: 90%;
     margin: auto;
     display: flex;
@@ -166,19 +170,22 @@ body {
 .grid {
     position: absolute;
     width: 100%;
+    max-width: 1024px;
+    min-width: 375px;
     z-index: -1;
     top: 100px;
     display: grid;
-    grid-row: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
         /* There are 4 sections with vh-width calculated inside grid */
 
 .content-container {
     position: relative;
-    height: calc((100vh - 105px) / 3);
+    height: calc((100vh - 100px) / 3);
     width: 100%;
-    padding: 5px 5px 0 5px;
+    padding: 5px;
     display: flex;
 }
 .backgr-img {
@@ -201,9 +208,16 @@ body {
     margin: auto;
     padding: 0px 6px;
     font-family: Roboto-Bold;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     text-shadow: 1px 1px black, 1px -1px black, -1px -1px black, -1px 1px black;
+}
+.p-on-top {
+    position: absolute;
+}
+.p-on-bottom {
+    position: absolute;
+    bottom: 10px;
 }
 .persone {
     position: relative;
@@ -238,9 +252,6 @@ body {
     height: 100%;
     padding: 5px;
     background-image: linear-gradient(to bottom, lightgray, dimgray, lightgray);
-}
-.p-on-top {
-    position: absolute;
 }
 #market-bachgrd-gradient {
     position: relative;
@@ -297,4 +308,50 @@ body {
     width: 220px;
     height: 160px;
     margin: auto;
+}
+
+
+            /* different media styling */
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+    
+}
+
+@media only screen and (min-width: 1025px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .container {
+        width: 1025px;
+    }
+    .burger-container {
+        display: none;
+    }
+    .nav-links {
+        position: relative;
+        float: right;
+        display: flex;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        z-index: unset;
+    }
+    .nav-links ul {
+        display: inline-flex;    
+    }
+    .nav-links ul li {
+        opacity: 1;
+    }
+    .content-container {
+        height: 200px;
+    }
+    .persone {
+        height: 100%;
+    }
 }
