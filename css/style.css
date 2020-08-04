@@ -36,7 +36,8 @@ header {
 }
 nav {
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: 100px;
     margin: auto;
     display: flex;
 }
@@ -103,7 +104,7 @@ nav {
     background-color: dimgray;
     display: flex;
     justify-content: center;
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: 0.5s ease-in;
 }
 .nav-links ul {    
@@ -176,7 +177,6 @@ body {
     top: 100px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
         /* There are 4 sections with vh-width calculated inside grid */
@@ -222,6 +222,7 @@ body {
 .persone {
     position: relative;
     height: 100%;
+    max-width: 100%;
     padding: 6px 0px;
     margin: auto;
 }
@@ -274,36 +275,34 @@ body {
 
 #badge-stuck {
     display: flex;
-    width: 80%;
+    width: auto;
+    max-width: 80%;
     height: auto;
+    max-height: 90%;
     margin: auto;
 }
-#car-1 {    
-    width: 70%;
+.pol-car {
+    width: auto;
+    max-width: 60%;
     height: auto;
-    margin: auto;
-}
-#car-2 {
-    width: 70%;
-    height: auto;
+    max-height: 60%;
     margin: auto;
 }
 #pol-dog {
-    width: 35%;
+    width: auto;
+    max-width: 35%;
     height: auto;
-    margin: auto;
-}
-#car-3 {
-    width: 60%;
-    height: auto;
+    max-height: 80%;
     margin: auto;
 }
 
             /* Sections of firefighters */
 
 .fighter-logo {
-    width: 50%;
+    width: auto;
+    max-width: 50%;
     height: auto;
+    max-height: 95%;
     margin: auto;
 }
 
@@ -312,8 +311,10 @@ body {
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        
+    }
+    .nav-main ul {
+        display: flex;
+        flex-flow: row;
     }
     
 }
@@ -321,7 +322,6 @@ body {
 @media only screen and (min-width: 1025px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .container {
         width: 1025px;
@@ -337,7 +337,6 @@ body {
         height: unset;
         transform: translateX(0%);
         z-index: unset;
-        /* float: right; */
         display: flex;    
     }
     .nav-links ul {
