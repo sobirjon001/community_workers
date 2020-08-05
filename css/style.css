@@ -179,7 +179,7 @@ body {
     grid-template-columns: 1fr;
 }
 
-        /* There are 4 sections with vh-width calculated inside grid */
+        /* There are sections with vh-width calculated inside grid */
 
 .content-container {
     position: relative;
